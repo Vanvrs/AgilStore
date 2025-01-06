@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estoque.css">
+    <script src="js/funcoes.js" defer></script>
+    <title>Estoque</title>
+</head>
+<body onload="listarEstoque()">
+    <h1>Estoque de Produtos</h1>
+    
+    <label for="buscarProduto">Buscar Produto:</label>
+    <input type="text" id="buscarProduto" placeholder="Digite o nome do produto">
+    <button onclick="buscarProduto()">Buscar</button>
+
+    <button onclick="limparEstoque()">Limpar Estoque</button>
+    <button class="botaoCadastro" onclick="window.location.href='index.html'">Cadastrar Produto</button>
+
+    <table id="tabelaEstoque">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os produtos serão listados aqui -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+
